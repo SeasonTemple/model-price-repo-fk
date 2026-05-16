@@ -17,16 +17,7 @@
     "moonshot/",
     "zai/",
     "minimax/",
-    "novita/",
-    "volcengine/",
-    "azure_ai/kimi-",
-    "bedrock/",
-    "zai.glm-",
-    "qwen.qwen3-",
-    "moonshot.kimi-",
-    "minimax.minimax-",
-    "moonshotai.kimi-",
-    "glm-4-"
+    "volcengine/"
   ],
   "exclude_patterns": [
     "sample_spec"
