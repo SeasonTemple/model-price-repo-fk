@@ -645,7 +645,7 @@
     "supports_system_messages": true,
     "supports_tool_choice": false
   },
-  "dashscope/qwen-coder": {
+  "qwen-coder": {
     "input_cost_per_token": 3e-7,
     "litellm_provider": "dashscope",
     "max_input_tokens": 1000000,
@@ -658,7 +658,7 @@
     "supports_reasoning": true,
     "supports_tool_choice": true
   },
-  "dashscope/qwen-flash": {
+  "qwen-flash": {
     "litellm_provider": "dashscope",
     "max_input_tokens": 997952,
     "max_output_tokens": 32768,
@@ -687,7 +687,7 @@
       }
     ]
   },
-  "dashscope/qwen-flash-2025-07-28": {
+  "qwen-flash-2025-07-28": {
     "litellm_provider": "dashscope",
     "max_input_tokens": 997952,
     "max_output_tokens": 32768,
@@ -716,7 +716,7 @@
       }
     ]
   },
-  "dashscope/qwen-max": {
+  "qwen-max": {
     "input_cost_per_token": 0.0000016,
     "litellm_provider": "dashscope",
     "max_input_tokens": 30720,
@@ -729,7 +729,7 @@
     "supports_reasoning": true,
     "supports_tool_choice": true
   },
-  "dashscope/qwen-plus": {
+  "qwen-plus": {
     "input_cost_per_token": 4e-7,
     "litellm_provider": "dashscope",
     "max_input_tokens": 129024,
@@ -742,7 +742,7 @@
     "supports_reasoning": true,
     "supports_tool_choice": true
   },
-  "dashscope/qwen-plus-2025-01-25": {
+  "qwen-plus-2025-01-25": {
     "input_cost_per_token": 4e-7,
     "litellm_provider": "dashscope",
     "max_input_tokens": 129024,
@@ -755,7 +755,7 @@
     "supports_reasoning": true,
     "supports_tool_choice": true
   },
-  "dashscope/qwen-plus-2025-04-28": {
+  "qwen-plus-2025-04-28": {
     "input_cost_per_token": 4e-7,
     "litellm_provider": "dashscope",
     "max_input_tokens": 129024,
@@ -769,7 +769,7 @@
     "supports_reasoning": true,
     "supports_tool_choice": true
   },
-  "dashscope/qwen-plus-2025-07-14": {
+  "qwen-plus-2025-07-14": {
     "input_cost_per_token": 4e-7,
     "litellm_provider": "dashscope",
     "max_input_tokens": 129024,
@@ -783,7 +783,7 @@
     "supports_reasoning": true,
     "supports_tool_choice": true
   },
-  "dashscope/qwen-plus-2025-07-28": {
+  "qwen-plus-2025-07-28": {
     "litellm_provider": "dashscope",
     "max_input_tokens": 997952,
     "max_output_tokens": 32768,
@@ -814,7 +814,7 @@
       }
     ]
   },
-  "dashscope/qwen-plus-2025-09-11": {
+  "qwen-plus-2025-09-11": {
     "litellm_provider": "dashscope",
     "max_input_tokens": 997952,
     "max_output_tokens": 32768,
@@ -845,7 +845,7 @@
       }
     ]
   },
-  "dashscope/qwen-plus-latest": {
+  "qwen-plus-latest": {
     "litellm_provider": "dashscope",
     "max_input_tokens": 997952,
     "max_output_tokens": 32768,
@@ -876,7 +876,7 @@
       }
     ]
   },
-  "dashscope/qwen-turbo": {
+  "qwen-turbo": {
     "input_cost_per_token": 5e-8,
     "litellm_provider": "dashscope",
     "max_input_tokens": 129024,
@@ -890,7 +890,7 @@
     "supports_reasoning": true,
     "supports_tool_choice": true
   },
-  "dashscope/qwen-turbo-2024-11-01": {
+  "qwen-turbo-2024-11-01": {
     "input_cost_per_token": 5e-8,
     "litellm_provider": "dashscope",
     "max_input_tokens": 1000000,
@@ -903,7 +903,7 @@
     "supports_reasoning": true,
     "supports_tool_choice": true
   },
-  "dashscope/qwen-turbo-2025-04-28": {
+  "qwen-turbo-2025-04-28": {
     "input_cost_per_token": 5e-8,
     "litellm_provider": "dashscope",
     "max_input_tokens": 1000000,
@@ -917,7 +917,7 @@
     "supports_reasoning": true,
     "supports_tool_choice": true
   },
-  "dashscope/qwen-turbo-latest": {
+  "qwen-turbo-latest": {
     "input_cost_per_token": 5e-8,
     "litellm_provider": "dashscope",
     "max_input_tokens": 1000000,
@@ -931,7 +931,7 @@
     "supports_reasoning": true,
     "supports_tool_choice": true
   },
-  "dashscope/qwen3-30b-a3b": {
+  "qwen3-30b-a3b": {
     "litellm_provider": "dashscope",
     "max_input_tokens": 129024,
     "max_output_tokens": 16384,
@@ -942,7 +942,7 @@
     "supports_reasoning": true,
     "supports_tool_choice": true
   },
-  "dashscope/qwen3-coder-flash": {
+  "qwen3-coder-flash": {
     "litellm_provider": "dashscope",
     "max_input_tokens": 997952,
     "max_output_tokens": 65536,
@@ -991,7 +991,7 @@
       }
     ]
   },
-  "dashscope/qwen3-coder-flash-2025-07-28": {
+  "qwen3-coder-flash-2025-07-28": {
     "litellm_provider": "dashscope",
     "max_input_tokens": 997952,
     "max_output_tokens": 65536,
@@ -1036,7 +1036,7 @@
       }
     ]
   },
-  "dashscope/qwen3-coder-plus": {
+  "qwen3-coder-plus": {
     "litellm_provider": "dashscope",
     "max_input_tokens": 997952,
     "max_output_tokens": 65536,
@@ -1085,7 +1085,7 @@
       }
     ]
   },
-  "dashscope/qwen3-coder-plus-2025-07-22": {
+  "qwen3-coder-plus-2025-07-22": {
     "litellm_provider": "dashscope",
     "max_input_tokens": 997952,
     "max_output_tokens": 65536,
@@ -1130,7 +1130,7 @@
       }
     ]
   },
-  "dashscope/qwen3-max-preview": {
+  "qwen3-max-preview": {
     "litellm_provider": "dashscope",
     "max_input_tokens": 258048,
     "max_output_tokens": 65536,
@@ -1167,7 +1167,7 @@
       }
     ]
   },
-  "dashscope/qwen3-max": {
+  "qwen3-max": {
     "litellm_provider": "dashscope",
     "max_input_tokens": 258048,
     "max_output_tokens": 65536,
@@ -1204,7 +1204,7 @@
       }
     ]
   },
-  "dashscope/qwen3-max-2026-01-23": {
+  "qwen3-max-2026-01-23": {
     "litellm_provider": "dashscope",
     "max_input_tokens": 258048,
     "max_output_tokens": 65536,
@@ -1241,7 +1241,7 @@
       }
     ]
   },
-  "dashscope/qwen3-next-80b-a3b-instruct": {
+  "qwen3-next-80b-a3b-instruct": {
     "input_cost_per_token": 1.5e-7,
     "litellm_provider": "dashscope",
     "max_input_tokens": 262144,
@@ -1253,7 +1253,7 @@
     "supports_function_calling": true,
     "supports_tool_choice": true
   },
-  "dashscope/qwen3-next-80b-a3b-thinking": {
+  "qwen3-next-80b-a3b-thinking": {
     "input_cost_per_token": 1.5e-7,
     "litellm_provider": "dashscope",
     "max_input_tokens": 262144,
@@ -1266,7 +1266,7 @@
     "supports_reasoning": true,
     "supports_tool_choice": true
   },
-  "dashscope/qwen3-vl-235b-a22b-instruct": {
+  "qwen3-vl-235b-a22b-instruct": {
     "input_cost_per_token": 4e-7,
     "litellm_provider": "dashscope",
     "max_input_tokens": 131072,
@@ -1279,7 +1279,7 @@
     "supports_tool_choice": true,
     "supports_vision": true
   },
-  "dashscope/qwen3-vl-235b-a22b-thinking": {
+  "qwen3-vl-235b-a22b-thinking": {
     "input_cost_per_token": 4e-7,
     "litellm_provider": "dashscope",
     "max_input_tokens": 131072,
@@ -1293,7 +1293,7 @@
     "supports_tool_choice": true,
     "supports_vision": true
   },
-  "dashscope/qwen3-vl-32b-instruct": {
+  "qwen3-vl-32b-instruct": {
     "input_cost_per_token": 1.6e-7,
     "litellm_provider": "dashscope",
     "max_input_tokens": 131072,
@@ -1306,7 +1306,7 @@
     "supports_tool_choice": true,
     "supports_vision": true
   },
-  "dashscope/qwen3-vl-32b-thinking": {
+  "qwen3-vl-32b-thinking": {
     "input_cost_per_token": 1.6e-7,
     "litellm_provider": "dashscope",
     "max_input_tokens": 131072,
@@ -1320,7 +1320,7 @@
     "supports_tool_choice": true,
     "supports_vision": true
   },
-  "dashscope/qwen3-vl-plus": {
+  "qwen3-vl-plus": {
     "litellm_provider": "dashscope",
     "max_input_tokens": 260096,
     "max_output_tokens": 32768,
@@ -1358,7 +1358,7 @@
       }
     ]
   },
-  "dashscope/qwen3.5-plus": {
+  "qwen3.5-plus": {
     "litellm_provider": "dashscope",
     "max_input_tokens": 991808,
     "max_output_tokens": 65536,
@@ -1388,7 +1388,7 @@
       }
     ]
   },
-  "dashscope/qwq-plus": {
+  "qwq-plus": {
     "input_cost_per_token": 8e-7,
     "litellm_provider": "dashscope",
     "max_input_tokens": 98304,
@@ -1401,7 +1401,7 @@
     "supports_reasoning": true,
     "supports_tool_choice": true
   },
-  "dashscope/qwen-image-2.0": {
+  "qwen-image-2.0": {
     "litellm_provider": "dashscope",
     "mode": "image_generation",
     "source": "https://www.alibabacloud.com/help/en/model-studio/models",
@@ -1409,7 +1409,7 @@
       "/v1/images/generations"
     ]
   },
-  "dashscope/qwen-image-2.0-pro": {
+  "qwen-image-2.0-pro": {
     "litellm_provider": "dashscope",
     "mode": "image_generation",
     "source": "https://www.alibabacloud.com/help/en/model-studio/models",
@@ -5325,7 +5325,23 @@
       "/v1/audio/speech"
     ]
   },
+  "speech-02-hd": {
+    "input_cost_per_character": 0.0001,
+    "litellm_provider": "minimax",
+    "mode": "audio_speech",
+    "supported_endpoints": [
+      "/v1/audio/speech"
+    ]
+  },
   "minimax/speech-02-turbo": {
+    "input_cost_per_character": 0.00006,
+    "litellm_provider": "minimax",
+    "mode": "audio_speech",
+    "supported_endpoints": [
+      "/v1/audio/speech"
+    ]
+  },
+  "speech-02-turbo": {
     "input_cost_per_character": 0.00006,
     "litellm_provider": "minimax",
     "mode": "audio_speech",
@@ -5341,6 +5357,14 @@
       "/v1/audio/speech"
     ]
   },
+  "speech-2.6-hd": {
+    "input_cost_per_character": 0.0001,
+    "litellm_provider": "minimax",
+    "mode": "audio_speech",
+    "supported_endpoints": [
+      "/v1/audio/speech"
+    ]
+  },
   "minimax/speech-2.6-turbo": {
     "input_cost_per_character": 0.00006,
     "litellm_provider": "minimax",
@@ -5349,7 +5373,30 @@
       "/v1/audio/speech"
     ]
   },
+  "speech-2.6-turbo": {
+    "input_cost_per_character": 0.00006,
+    "litellm_provider": "minimax",
+    "mode": "audio_speech",
+    "supported_endpoints": [
+      "/v1/audio/speech"
+    ]
+  },
   "minimax/MiniMax-M2.1": {
+    "input_cost_per_token": 3e-7,
+    "output_cost_per_token": 0.0000012,
+    "cache_read_input_token_cost": 3e-8,
+    "cache_creation_input_token_cost": 3.75e-7,
+    "litellm_provider": "minimax",
+    "mode": "chat",
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_prompt_caching": true,
+    "supports_reasoning": true,
+    "supports_system_messages": true,
+    "max_input_tokens": 1000000,
+    "max_output_tokens": 8192
+  },
+  "MiniMax-M2.1": {
     "input_cost_per_token": 3e-7,
     "output_cost_per_token": 0.0000012,
     "cache_read_input_token_cost": 3e-8,
@@ -5379,7 +5426,37 @@
     "max_input_tokens": 1000000,
     "max_output_tokens": 8192
   },
+  "MiniMax-M2.1-lightning": {
+    "input_cost_per_token": 3e-7,
+    "output_cost_per_token": 0.0000024,
+    "cache_read_input_token_cost": 3e-8,
+    "cache_creation_input_token_cost": 3.75e-7,
+    "litellm_provider": "minimax",
+    "mode": "chat",
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_prompt_caching": true,
+    "supports_reasoning": true,
+    "supports_system_messages": true,
+    "max_input_tokens": 1000000,
+    "max_output_tokens": 8192
+  },
   "minimax/MiniMax-M2.5": {
+    "input_cost_per_token": 3e-7,
+    "output_cost_per_token": 0.0000012,
+    "cache_read_input_token_cost": 3e-8,
+    "cache_creation_input_token_cost": 3.75e-7,
+    "litellm_provider": "minimax",
+    "mode": "chat",
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_prompt_caching": true,
+    "supports_reasoning": true,
+    "supports_system_messages": true,
+    "max_input_tokens": 1000000,
+    "max_output_tokens": 8192
+  },
+  "MiniMax-M2.5": {
     "input_cost_per_token": 3e-7,
     "output_cost_per_token": 0.0000012,
     "cache_read_input_token_cost": 3e-8,
@@ -5409,6 +5486,21 @@
     "max_input_tokens": 1000000,
     "max_output_tokens": 8192
   },
+  "MiniMax-M2.5-lightning": {
+    "input_cost_per_token": 3e-7,
+    "output_cost_per_token": 0.0000024,
+    "cache_read_input_token_cost": 3e-8,
+    "cache_creation_input_token_cost": 3.75e-7,
+    "litellm_provider": "minimax",
+    "mode": "chat",
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_prompt_caching": true,
+    "supports_reasoning": true,
+    "supports_system_messages": true,
+    "max_input_tokens": 1000000,
+    "max_output_tokens": 8192
+  },
   "minimax/MiniMax-M2": {
     "input_cost_per_token": 3e-7,
     "output_cost_per_token": 0.0000012,
@@ -5424,7 +5516,22 @@
     "max_input_tokens": 200000,
     "max_output_tokens": 8192
   },
-  "moonshot/kimi-k2-0711-preview": {
+  "MiniMax-M2": {
+    "input_cost_per_token": 3e-7,
+    "output_cost_per_token": 0.0000012,
+    "cache_read_input_token_cost": 3e-8,
+    "cache_creation_input_token_cost": 3.75e-7,
+    "litellm_provider": "minimax",
+    "mode": "chat",
+    "supports_function_calling": true,
+    "supports_tool_choice": true,
+    "supports_prompt_caching": true,
+    "supports_reasoning": true,
+    "supports_system_messages": true,
+    "max_input_tokens": 200000,
+    "max_output_tokens": 8192
+  },
+  "kimi-k2-0711-preview": {
     "cache_read_input_token_cost": 1.5e-7,
     "input_cost_per_token": 6e-7,
     "litellm_provider": "moonshot",
@@ -5438,7 +5545,7 @@
     "supports_tool_choice": true,
     "supports_web_search": true
   },
-  "moonshot/kimi-k2-0905-preview": {
+  "kimi-k2-0905-preview": {
     "cache_read_input_token_cost": 1.5e-7,
     "input_cost_per_token": 6e-7,
     "litellm_provider": "moonshot",
@@ -5452,7 +5559,7 @@
     "supports_tool_choice": true,
     "supports_web_search": true
   },
-  "moonshot/kimi-k2-turbo-preview": {
+  "kimi-k2-turbo-preview": {
     "cache_read_input_token_cost": 1.5e-7,
     "input_cost_per_token": 0.00000115,
     "litellm_provider": "moonshot",
@@ -5466,7 +5573,7 @@
     "supports_tool_choice": true,
     "supports_web_search": true
   },
-  "moonshot/kimi-k2.5": {
+  "kimi-k2.5": {
     "cache_read_input_token_cost": 1e-7,
     "input_cost_per_token": 6e-7,
     "litellm_provider": "moonshot",
@@ -5482,7 +5589,7 @@
     "supports_video_input": true,
     "supports_vision": true
   },
-  "moonshot/kimi-k2.6": {
+  "kimi-k2.6": {
     "cache_read_input_token_cost": 1.6e-7,
     "input_cost_per_token": 9.5e-7,
     "litellm_provider": "moonshot",
@@ -5498,7 +5605,7 @@
     "supports_video_input": true,
     "supports_vision": true
   },
-  "moonshot/kimi-latest": {
+  "kimi-latest": {
     "cache_read_input_token_cost": 1.5e-7,
     "input_cost_per_token": 0.000002,
     "litellm_provider": "moonshot",
@@ -5512,7 +5619,7 @@
     "supports_tool_choice": true,
     "supports_vision": true
   },
-  "moonshot/kimi-latest-128k": {
+  "kimi-latest-128k": {
     "cache_read_input_token_cost": 1.5e-7,
     "input_cost_per_token": 0.000002,
     "litellm_provider": "moonshot",
@@ -5526,7 +5633,7 @@
     "supports_tool_choice": true,
     "supports_vision": true
   },
-  "moonshot/kimi-latest-32k": {
+  "kimi-latest-32k": {
     "cache_read_input_token_cost": 1.5e-7,
     "input_cost_per_token": 0.000001,
     "litellm_provider": "moonshot",
@@ -5540,7 +5647,7 @@
     "supports_tool_choice": true,
     "supports_vision": true
   },
-  "moonshot/kimi-latest-8k": {
+  "kimi-latest-8k": {
     "cache_read_input_token_cost": 1.5e-7,
     "input_cost_per_token": 2e-7,
     "litellm_provider": "moonshot",
@@ -5554,7 +5661,7 @@
     "supports_tool_choice": true,
     "supports_vision": true
   },
-  "moonshot/kimi-thinking-preview": {
+  "kimi-thinking-preview": {
     "cache_read_input_token_cost": 1.5e-7,
     "input_cost_per_token": 6e-7,
     "litellm_provider": "moonshot",
@@ -5566,7 +5673,7 @@
     "source": "https://platform.moonshot.ai/docs/pricing/chat#generation-model-kimi-k2",
     "supports_vision": true
   },
-  "moonshot/kimi-k2-thinking": {
+  "kimi-k2-thinking": {
     "cache_read_input_token_cost": 1.5e-7,
     "input_cost_per_token": 6e-7,
     "litellm_provider": "moonshot",
@@ -5581,7 +5688,7 @@
     "supports_tool_choice": true,
     "supports_web_search": true
   },
-  "moonshot/kimi-k2-thinking-turbo": {
+  "kimi-k2-thinking-turbo": {
     "cache_read_input_token_cost": 1.5e-7,
     "input_cost_per_token": 0.00000115,
     "litellm_provider": "moonshot",
@@ -5596,7 +5703,7 @@
     "supports_tool_choice": true,
     "supports_web_search": true
   },
-  "moonshot/moonshot-v1-128k": {
+  "moonshot-v1-128k": {
     "input_cost_per_token": 0.000002,
     "litellm_provider": "moonshot",
     "max_input_tokens": 131072,
@@ -5608,7 +5715,7 @@
     "supports_function_calling": true,
     "supports_tool_choice": true
   },
-  "moonshot/moonshot-v1-128k-0430": {
+  "moonshot-v1-128k-0430": {
     "input_cost_per_token": 0.000002,
     "litellm_provider": "moonshot",
     "max_input_tokens": 131072,
@@ -5620,7 +5727,7 @@
     "supports_function_calling": true,
     "supports_tool_choice": true
   },
-  "moonshot/moonshot-v1-128k-vision-preview": {
+  "moonshot-v1-128k-vision-preview": {
     "input_cost_per_token": 0.000002,
     "litellm_provider": "moonshot",
     "max_input_tokens": 131072,
@@ -5633,7 +5740,7 @@
     "supports_tool_choice": true,
     "supports_vision": true
   },
-  "moonshot/moonshot-v1-32k": {
+  "moonshot-v1-32k": {
     "input_cost_per_token": 0.000001,
     "litellm_provider": "moonshot",
     "max_input_tokens": 32768,
@@ -5645,7 +5752,7 @@
     "supports_function_calling": true,
     "supports_tool_choice": true
   },
-  "moonshot/moonshot-v1-32k-0430": {
+  "moonshot-v1-32k-0430": {
     "input_cost_per_token": 0.000001,
     "litellm_provider": "moonshot",
     "max_input_tokens": 32768,
@@ -5657,7 +5764,7 @@
     "supports_function_calling": true,
     "supports_tool_choice": true
   },
-  "moonshot/moonshot-v1-32k-vision-preview": {
+  "moonshot-v1-32k-vision-preview": {
     "input_cost_per_token": 0.000001,
     "litellm_provider": "moonshot",
     "max_input_tokens": 32768,
@@ -5670,7 +5777,7 @@
     "supports_tool_choice": true,
     "supports_vision": true
   },
-  "moonshot/moonshot-v1-8k": {
+  "moonshot-v1-8k": {
     "input_cost_per_token": 2e-7,
     "litellm_provider": "moonshot",
     "max_input_tokens": 8192,
@@ -5682,7 +5789,7 @@
     "supports_function_calling": true,
     "supports_tool_choice": true
   },
-  "moonshot/moonshot-v1-8k-0430": {
+  "moonshot-v1-8k-0430": {
     "input_cost_per_token": 2e-7,
     "litellm_provider": "moonshot",
     "max_input_tokens": 8192,
@@ -5694,7 +5801,7 @@
     "supports_function_calling": true,
     "supports_tool_choice": true
   },
-  "moonshot/moonshot-v1-8k-vision-preview": {
+  "moonshot-v1-8k-vision-preview": {
     "input_cost_per_token": 2e-7,
     "litellm_provider": "moonshot",
     "max_input_tokens": 8192,
@@ -5707,7 +5814,7 @@
     "supports_tool_choice": true,
     "supports_vision": true
   },
-  "moonshot/moonshot-v1-auto": {
+  "moonshot-v1-auto": {
     "input_cost_per_token": 0.000002,
     "litellm_provider": "moonshot",
     "max_input_tokens": 131072,
@@ -6152,7 +6259,7 @@
     "supports_vision": true,
     "supports_web_search": true
   },
-  "zai/glm-5": {
+  "glm-5": {
     "cache_creation_input_token_cost": 0,
     "cache_read_input_token_cost": 2e-7,
     "input_cost_per_token": 0.000001,
@@ -6167,7 +6274,7 @@
     "supports_tool_choice": true,
     "source": "https://docs.z.ai/guides/overview/pricing"
   },
-  "zai/glm-5-code": {
+  "glm-5-code": {
     "cache_creation_input_token_cost": 0,
     "cache_read_input_token_cost": 3e-7,
     "input_cost_per_token": 0.0000012,
@@ -6182,7 +6289,7 @@
     "supports_tool_choice": true,
     "source": "https://docs.z.ai/guides/overview/pricing"
   },
-  "zai/glm-4.7": {
+  "glm-4.7": {
     "cache_creation_input_token_cost": 0,
     "cache_read_input_token_cost": 1.1e-7,
     "input_cost_per_token": 6e-7,
@@ -6197,7 +6304,7 @@
     "supports_tool_choice": true,
     "source": "https://docs.z.ai/guides/overview/pricing"
   },
-  "zai/glm-4.6": {
+  "glm-4.6": {
     "cache_creation_input_token_cost": 0,
     "cache_read_input_token_cost": 1.1e-7,
     "input_cost_per_token": 6e-7,
@@ -6212,7 +6319,7 @@
     "supports_tool_choice": true,
     "source": "https://docs.z.ai/guides/overview/pricing"
   },
-  "zai/glm-4.5": {
+  "glm-4.5": {
     "input_cost_per_token": 6e-7,
     "output_cost_per_token": 0.0000022,
     "litellm_provider": "zai",
@@ -6223,7 +6330,7 @@
     "supports_tool_choice": true,
     "source": "https://docs.z.ai/guides/overview/pricing"
   },
-  "zai/glm-4.5v": {
+  "glm-4.5v": {
     "input_cost_per_token": 6e-7,
     "output_cost_per_token": 0.0000018,
     "litellm_provider": "zai",
@@ -6235,7 +6342,7 @@
     "supports_vision": true,
     "source": "https://docs.z.ai/guides/overview/pricing"
   },
-  "zai/glm-4.5-x": {
+  "glm-4.5-x": {
     "input_cost_per_token": 0.0000022,
     "output_cost_per_token": 0.0000089,
     "litellm_provider": "zai",
@@ -6246,7 +6353,7 @@
     "supports_tool_choice": true,
     "source": "https://docs.z.ai/guides/overview/pricing"
   },
-  "zai/glm-4.5-air": {
+  "glm-4.5-air": {
     "input_cost_per_token": 2e-7,
     "output_cost_per_token": 0.0000011,
     "litellm_provider": "zai",
@@ -6257,7 +6364,7 @@
     "supports_tool_choice": true,
     "source": "https://docs.z.ai/guides/overview/pricing"
   },
-  "zai/glm-4.5-airx": {
+  "glm-4.5-airx": {
     "input_cost_per_token": 0.0000011,
     "output_cost_per_token": 0.0000045,
     "litellm_provider": "zai",
@@ -6268,7 +6375,7 @@
     "supports_tool_choice": true,
     "source": "https://docs.z.ai/guides/overview/pricing"
   },
-  "zai/glm-4-32b-0414-128k": {
+  "glm-4-32b-0414-128k": {
     "input_cost_per_token": 1e-7,
     "output_cost_per_token": 1e-7,
     "litellm_provider": "zai",
@@ -6279,7 +6386,7 @@
     "supports_tool_choice": true,
     "source": "https://docs.z.ai/guides/overview/pricing"
   },
-  "zai/glm-4.5-flash": {
+  "glm-4.5-flash": {
     "input_cost_per_token": 0,
     "output_cost_per_token": 0,
     "litellm_provider": "zai",
@@ -6801,7 +6908,7 @@
       "search_context_size_high": 0.035
     }
   },
-  "volcengine/doubao-seed-2-0-pro-260215": {
+  "doubao-seed-2-0-pro-260215": {
     "litellm_provider": "volcengine",
     "max_input_tokens": 256000,
     "max_output_tokens": 128000,
@@ -6839,7 +6946,7 @@
       }
     ]
   },
-  "volcengine/doubao-seed-2-0-lite-260215": {
+  "doubao-seed-2-0-lite-260215": {
     "litellm_provider": "volcengine",
     "max_input_tokens": 256000,
     "max_output_tokens": 128000,
@@ -6877,7 +6984,7 @@
       }
     ]
   },
-  "volcengine/doubao-seed-2-0-mini-260215": {
+  "doubao-seed-2-0-mini-260215": {
     "litellm_provider": "volcengine",
     "max_input_tokens": 256000,
     "max_output_tokens": 128000,
@@ -6915,7 +7022,7 @@
       }
     ]
   },
-  "volcengine/doubao-seed-2-0-code-preview-260215": {
+  "doubao-seed-2-0-code-preview-260215": {
     "litellm_provider": "volcengine",
     "max_input_tokens": 256000,
     "max_output_tokens": 128000,

@@ -33,8 +33,9 @@ REQUIRED_CONFIG_KEYS = [
     "output_file",
     "hash_file",
     "sync_mode",
-    "prefix_filters",
 ]
+
+REQUIRED_ONE_OF = ["prefix_filters", "prefix_rules"]
 
 
 def load_config(path: str) -> dict:
@@ -48,6 +49,13 @@ def load_config(path: str) -> dict:
     if missing:
         log.error("Config missing required keys: %s", ", ".join(missing))
         sys.exit(1)
+    has_old = "prefix_filters" in cfg
+    has_new = "prefix_rules" in cfg
+    if not has_old and not has_new:
+        log.error("Config must contain one of: %s", ", ".join(REQUIRED_ONE_OF))
+        sys.exit(1)
+    if has_old and has_new:
+        log.warning("Both prefix_filters and prefix_rules present; prefix_rules takes precedence.")
     if cfg["sync_mode"] not in ("additive", "full"):
         log.error("Invalid sync_mode '%s'; must be 'additive' or 'full'", cfg["sync_mode"])
         sys.exit(1)
@@ -112,19 +120,50 @@ def fetch_upstream(url: str) -> dict:
 
 
 def filter_upstream(data: dict, config: dict) -> dict:
-    """Apply prefix_filters and exclude_patterns to upstream data."""
-    prefixes = tuple(config.get("prefix_filters", []))
+    """Apply prefix_rules (or legacy prefix_filters) and exclude_patterns to upstream data.
+
+    prefix_rules values:
+      - "keep":  retain original key as-is
+      - "strip": remove the matched prefix from the key
+      - "both":  keep both original and stripped key
+    """
     excludes = config.get("exclude_patterns", [])
+
+    # New-style prefix_rules
+    rules: dict[str, str] = config.get("prefix_rules", {})
+    if rules:
+        prefixes = tuple(rules.keys())
+    else:
+        # Legacy prefix_filters fallback
+        prefixes = tuple(config.get("prefix_filters", []))
+        rules = {}
 
     filtered = {}
     for key, value in data.items():
-        # Exclude first
         if any(pat in key for pat in excludes):
             continue
-        # Then check prefix match
-        if prefixes and not key.startswith(prefixes):
+
+        matched_prefix = next((p for p in prefixes if key.startswith(p)), None)
+        if not matched_prefix:
             continue
-        filtered[key] = value
+
+        if not rules:
+            # Legacy mode: keep original key
+            filtered[key] = value
+            continue
+
+        action = rules[matched_prefix]
+        stripped_key = key[len(matched_prefix):]
+
+        if action == "keep":
+            filtered[key] = value
+        elif action == "strip":
+            filtered[stripped_key] = value
+        elif action == "both":
+            filtered[key] = value
+            filtered[stripped_key] = value
+        else:
+            log.warning("Unknown prefix_rules action '%s' for prefix '%s'; skipping.", action, matched_prefix)
 
     log.info("Filtered to %d models (from %d upstream).", len(filtered), len(data))
     return filtered
