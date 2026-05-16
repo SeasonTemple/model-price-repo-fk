@@ -12,7 +12,21 @@
     "o3-",
     "o3",
     "o4-",
-    "deepseek-"
+    "deepseek-",
+    "dashscope/",
+    "moonshot/",
+    "zai/",
+    "minimax/",
+    "novita/",
+    "volcengine/",
+    "azure_ai/kimi-",
+    "bedrock/",
+    "zai.glm-",
+    "qwen.qwen3-",
+    "moonshot.kimi-",
+    "minimax.minimax-",
+    "moonshotai.kimi-",
+    "glm-4-"
   ],
   "exclude_patterns": [
     "sample_spec"
