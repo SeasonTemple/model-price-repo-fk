@@ -98,20 +98,37 @@ The fork has `pricing.remote_url` pre-configured to point here, with an updated 
 
 **Option B: Use upstream sub2api with environment variables**
 
-No fork needed. Just set two environment variables when deploying:
+No fork needed. Just set two environment variables when deploying.
+
+Bare metal (shell):
 
 ```bash
 export PRICING_REMOTE_URL=https://raw.githubusercontent.com/SeasonTemple/model-price-repo-fk/main/model_prices_and_context_window.json
 export PRICING_HASH_URL=https://raw.githubusercontent.com/SeasonTemple/model-price-repo-fk/main/model_prices_and_context_window.sha256
 ```
 
-Or in Docker Compose:
+Docker Compose — add to the `sub2api` service `environment` section:
 
 ```yaml
-environment:
-  PRICING_REMOTE_URL: https://raw.githubusercontent.com/SeasonTemple/model-price-repo-fk/main/model_prices_and_context_window.json
-  PRICING_HASH_URL: https://raw.githubusercontent.com/SeasonTemple/model-price-repo-fk/main/model_prices_and_context_window.sha256
+services:
+  sub2api:
+    image: weishaw/sub2api:latest
+    environment:
+      # ... existing vars ...
+      # Chinese domestic model pricing source
+      - PRICING_REMOTE_URL=https://raw.githubusercontent.com/SeasonTemple/model-price-repo-fk/main/model_prices_and_context_window.json
+      - PRICING_HASH_URL=https://raw.githubusercontent.com/SeasonTemple/model-price-repo-fk/main/model_prices_and_context_window.sha256
 ```
+
+Or via `.env` file (reference: [deploy/.env.example](https://github.com/Wei-Shaw/sub2api/blob/main/deploy/.env.example)):
+
+```bash
+# Chinese domestic model pricing source
+PRICING_REMOTE_URL=https://raw.githubusercontent.com/SeasonTemple/model-price-repo-fk/main/model_prices_and_context_window.json
+PRICING_HASH_URL=https://raw.githubusercontent.com/SeasonTemple/model-price-repo-fk/main/model_prices_and_context_window.sha256
+```
+
+Then `docker compose up -d` to restart. Sub2api will automatically fetch pricing data with Chinese domestic models on startup.
 
 > **Note:** Option B relies on remote fetch succeeding. If the fetch fails, the built-in fallback JSON (from upstream sub2api) has no Chinese domestic model pricing, and those models will bill as $0.
 
