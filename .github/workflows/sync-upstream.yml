@@ -1,0 +1,110 @@
+name: Sync Upstream
+
+# Auto-merge upstream (Wei-Shaw/model-price-repo) config changes into this fork,
+# then rebuild the generated pricing files. Generated artifacts never conflict
+# (.gitattributes merge=ours); config.json conflicts are resolved semantically
+# by scripts/merge_config.py (upstream additions in, fork values kept).
+#
+# The litellm price DATA is already synced every 10 min by sync-model-pricing.yml.
+# This workflow only pulls in upstream's config.json edits (new aliases /
+# custom_models / prefix rules) and code.
+
+on:
+  schedule:
+    - cron: '17 3 * * *'   # daily 03:17 UTC (off-peak minute)
+  workflow_dispatch: {}
+
+concurrency:
+  group: sync-upstream     # own group: data-sync (cancel-in-progress) must not cancel us
+
+permissions:
+  contents: write
+
+env:
+  UPSTREAM_URL: https://github.com/Wei-Shaw/model-price-repo.git
+
+jobs:
+  sync-upstream:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Configure git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          # Enable the "ours" merge driver referenced by .gitattributes.
+          git config merge.ours.driver true
+
+      - name: Merge upstream
+        id: merge
+        run: |
+          set -euo pipefail
+          git remote add upstream "$UPSTREAM_URL" 2>/dev/null || git remote set-url upstream "$UPSTREAM_URL"
+          git fetch upstream main
+
+          if git merge-base --is-ancestor upstream/main HEAD; then
+            echo "Already contains upstream/main; nothing to do."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          # Attempt the merge. Generated files resolve via merge=ours.
+          # A non-zero exit just means there are conflicts left to resolve.
+          git merge --no-edit --no-ff upstream/main || true
+
+          # Semantic resolve for config.json (no-op if it merged cleanly).
+          python3 scripts/merge_config.py --path config.json
+
+          # Any other still-conflicted file: prefer ours and log it loudly.
+          conflicts=$(git diff --name-only --diff-filter=U)
+          if [ -n "$conflicts" ]; then
+            echo "::warning::Non-config conflicts auto-resolved to OURS:"
+            echo "$conflicts"
+            echo "$conflicts" | while read -r f; do
+              git checkout --ours -- "$f"
+              git add -- "$f"
+            done
+          fi
+
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Rebuild generated files
+        if: steps.merge.outputs.changed == 'true'
+        run: |
+          set -euo pipefail
+          python3 scripts/sync_prices.py --config config.json --repo-root .
+          python3 -c "import json; json.load(open('model_prices_and_context_window.json'))"  # validate
+          git add -A
+
+      - name: Commit and push
+        if: steps.merge.outputs.changed == 'true'
+        run: |
+          set -euo pipefail
+          # Fold the rebuild into the merge commit (MERGE_HEAD still set if the
+          # merge was committed by --no-edit; otherwise create a normal commit).
+          if git rev-parse -q --verify MERGE_HEAD >/dev/null; then
+            git commit --no-edit
+          else
+            git diff --cached --quiet || git commit -m "chore: sync upstream config + rebuild pricing"
+          fi
+          # Push; if the 10-min data sync pushed meanwhile, merge it in and rebuild.
+          for attempt in 1 2 3; do
+            if git push origin HEAD:main; then exit 0; fi
+            echo "push rejected (attempt $attempt); merging origin/main and rebuilding"
+            git fetch origin main
+            git merge --no-edit origin/main || true
+            python3 scripts/merge_config.py --path config.json
+            python3 scripts/sync_prices.py --config config.json --repo-root .
+            git add -A
+            git commit --no-edit || true
+          done
+          exit 1
