@@ -823,16 +823,17 @@
     "supports_vision": true
   },
   "claude-sonnet-5": {
-    "cache_creation_input_token_cost": 3.75e-06,
-    "cache_creation_input_token_cost_above_1hr": 6e-06,
-    "cache_read_input_token_cost": 3e-07,
-    "input_cost_per_token": 3e-06,
+    "_comment": "Promotional pricing through 2026-08-31: $2 / $2.50 / $4 / $0.20 / $10 per MTok (input / cache-write-5m / cache-write-1h / cache-read / output). Remove this override when the promo ends.",
+    "cache_creation_input_token_cost": 2.5e-06,
+    "cache_creation_input_token_cost_above_1hr": 4e-06,
+    "cache_read_input_token_cost": 2e-07,
+    "input_cost_per_token": 2e-06,
     "litellm_provider": "anthropic",
     "max_input_tokens": 1000000,
     "max_output_tokens": 128000,
     "max_tokens": 128000,
     "mode": "chat",
-    "output_cost_per_token": 1.5e-05,
+    "output_cost_per_token": 1e-05,
     "provider_specific_entry": {
       "us": 1.1
     },
