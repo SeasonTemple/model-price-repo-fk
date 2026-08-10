@@ -52,8 +52,8 @@
       "description": "Alias for gemini-3-flash-preview"
     },
     "codex-auto-review": {
-      "source": "gpt-5.5",
-      "description": "Alias for gpt-5.5 with auto-review enabled"
+      "source": "gpt-5.6-luna",
+      "description": "Alias for gpt-5.6-luna with auto-review enabled"
     }
   },
   "cache_1hr_auto_fill": {
