@@ -124,6 +124,7 @@
     "cache_creation_input_token_cost": 3e-07,
     "cache_creation_input_token_cost_above_1hr": 6e-06,
     "cache_read_input_token_cost": 3e-08,
+    "deprecation_date": "2026-04-20",
     "input_cost_per_token": 2.5e-07,
     "litellm_provider": "anthropic",
     "max_input_tokens": 200000,
@@ -161,6 +162,7 @@
     "cache_creation_input_token_cost": 1.875e-05,
     "cache_creation_input_token_cost_above_1hr": 3e-05,
     "cache_read_input_token_cost": 1.5e-06,
+    "deprecation_date": "2026-06-15",
     "input_cost_per_token": 1.5e-05,
     "litellm_provider": "anthropic",
     "max_input_tokens": 200000,
@@ -190,6 +192,7 @@
     "cache_creation_input_token_cost_above_200k_tokens": 7.5e-06,
     "cache_read_input_token_cost": 3e-07,
     "cache_read_input_token_cost_above_200k_tokens": 6e-07,
+    "deprecation_date": "2026-06-15",
     "input_cost_per_token": 3e-06,
     "input_cost_per_token_above_200k_tokens": 6e-06,
     "litellm_provider": "anthropic",
@@ -309,6 +312,7 @@
     "max_tokens": 128000,
     "mode": "chat",
     "output_cost_per_token": 5e-05,
+    "prompt_cache_min_tokens": 512,
     "provider_specific_entry": {
       "fast": 6.0,
       "us": 1.1
@@ -318,6 +322,7 @@
       "search_context_size_low": 0.01,
       "search_context_size_medium": 0.01
     },
+    "source": "https://docs.claude.com/en/docs/about-claude/models/overview",
     "supports_adaptive_thinking": true,
     "supports_assistant_prefill": false,
     "supports_computer_use": true,
@@ -329,15 +334,50 @@
     "supports_prompt_caching": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
+    "supports_sampling_params": false,
     "supports_tool_choice": true,
     "supports_vision": true,
     "supports_xhigh_reasoning_effort": true,
     "tool_use_system_prompt_tokens": 346
   },
+  "claude-mythos-preview": {
+    "cache_creation_input_token_cost": 1.25e-05,
+    "cache_creation_input_token_cost_above_1hr": 2e-05,
+    "cache_read_input_token_cost": 1e-06,
+    "input_cost_per_token": 1e-05,
+    "litellm_provider": "anthropic",
+    "max_input_tokens": 1000000,
+    "max_output_tokens": 128000,
+    "max_tokens": 128000,
+    "mode": "chat",
+    "output_cost_per_token": 5e-05,
+    "prompt_cache_min_tokens": 512,
+    "search_context_cost_per_query": {
+      "search_context_size_high": 0.01,
+      "search_context_size_low": 0.01,
+      "search_context_size_medium": 0.01
+    },
+    "source": "https://docs.claude.com/en/docs/about-claude/models/overview",
+    "supports_adaptive_thinking": true,
+    "supports_assistant_prefill": false,
+    "supports_computer_use": true,
+    "supports_function_calling": true,
+    "supports_max_reasoning_effort": true,
+    "supports_output_config": true,
+    "supports_pdf_input": true,
+    "supports_prompt_caching": true,
+    "supports_reasoning": true,
+    "supports_response_schema": true,
+    "supports_sampling_params": false,
+    "supports_tool_choice": true,
+    "supports_vision": true,
+    "supports_xhigh_reasoning_effort": true
+  },
   "claude-opus-4-1": {
     "cache_creation_input_token_cost": 1.875e-05,
     "cache_creation_input_token_cost_above_1hr": 3e-05,
     "cache_read_input_token_cost": 1.5e-06,
+    "deprecation_date": "2026-08-05",
     "input_cost_per_token": 1.5e-05,
     "litellm_provider": "anthropic",
     "max_input_tokens": 200000,
@@ -862,6 +902,7 @@
     "supports_reasoning": true,
     "supports_response_schema": true,
     "supports_tool_choice": true,
+    "supports_tool_search": true,
     "supports_vision": true
   },
   "claude-sonnet-4-6": {
@@ -3419,6 +3460,7 @@
     "supports_tool_choice": true
   },
   "gpt-3.5-turbo": {
+    "deprecation_date": "2026-10-23",
     "input_cost_per_token": 5e-07,
     "litellm_provider": "openai",
     "max_input_tokens": 16385,
@@ -3432,6 +3474,7 @@
     "supports_tool_choice": true
   },
   "gpt-3.5-turbo-0125": {
+    "deprecation_date": "2026-10-23",
     "input_cost_per_token": 5e-07,
     "litellm_provider": "openai",
     "max_input_tokens": 16385,
@@ -3491,6 +3534,7 @@
     "output_cost_per_token": 2e-06
   },
   "gpt-4": {
+    "deprecation_date": "2026-10-23",
     "input_cost_per_token": 3e-05,
     "litellm_provider": "openai",
     "max_input_tokens": 8192,
@@ -3560,6 +3604,7 @@
     "supports_tool_choice": true
   },
   "gpt-4-turbo": {
+    "deprecation_date": "2026-10-23",
     "input_cost_per_token": 1e-05,
     "litellm_provider": "openai",
     "max_input_tokens": 128000,
@@ -3576,6 +3621,7 @@
     "supports_vision": true
   },
   "gpt-4-turbo-2024-04-09": {
+    "deprecation_date": "2026-10-23",
     "input_cost_per_token": 1e-05,
     "litellm_provider": "openai",
     "max_input_tokens": 128000,
@@ -3765,6 +3811,7 @@
   "gpt-4.1-nano": {
     "cache_read_input_token_cost": 2.5e-08,
     "cache_read_input_token_cost_priority": 5e-08,
+    "deprecation_date": "2026-10-23",
     "input_cost_per_token": 1e-07,
     "input_cost_per_token_batches": 5e-08,
     "input_cost_per_token_priority": 2e-07,
@@ -3804,6 +3851,7 @@
   "gpt-4.1-nano-2025-04-14": {
     "cache_read_input_token_cost": 2.5e-08,
     "cache_read_input_token_cost_priority": 5e-08,
+    "deprecation_date": "2026-10-23",
     "input_cost_per_token": 1e-07,
     "input_cost_per_token_batches": 5e-08,
     "input_cost_per_token_priority": 2e-07,
@@ -3865,6 +3913,7 @@
     "supports_vision": true
   },
   "gpt-4o-2024-05-13": {
+    "deprecation_date": "2026-10-23",
     "input_cost_per_token": 5e-06,
     "input_cost_per_token_batches": 2.5e-06,
     "input_cost_per_token_priority": 8.75e-06,
@@ -3937,6 +3986,7 @@
     "supports_vision": true
   },
   "gpt-4o-audio-preview": {
+    "deprecation_date": "2027-01-20",
     "input_cost_per_audio_token": 4e-05,
     "input_cost_per_token": 2.5e-06,
     "litellm_provider": "openai",
@@ -3954,6 +4004,7 @@
     "supports_tool_choice": true
   },
   "gpt-4o-audio-preview-2024-12-17": {
+    "deprecation_date": "2027-01-20",
     "input_cost_per_audio_token": 4e-05,
     "input_cost_per_token": 2.5e-06,
     "litellm_provider": "openai",
@@ -3971,6 +4022,7 @@
     "supports_tool_choice": true
   },
   "gpt-4o-audio-preview-2025-06-03": {
+    "deprecation_date": "2027-01-20",
     "input_cost_per_audio_token": 4e-05,
     "input_cost_per_token": 2.5e-06,
     "litellm_provider": "openai",
@@ -4043,6 +4095,7 @@
     "supports_vision": true
   },
   "gpt-4o-mini-audio-preview": {
+    "deprecation_date": "2027-01-20",
     "input_cost_per_audio_token": 1e-05,
     "input_cost_per_token": 1.5e-07,
     "litellm_provider": "openai",
@@ -4060,6 +4113,7 @@
     "supports_tool_choice": true
   },
   "gpt-4o-mini-audio-preview-2024-12-17": {
+    "deprecation_date": "2027-01-20",
     "input_cost_per_audio_token": 1e-05,
     "input_cost_per_token": 1.5e-07,
     "litellm_provider": "openai",
@@ -4079,6 +4133,7 @@
   "gpt-4o-mini-realtime-preview": {
     "cache_creation_input_audio_token_cost": 3e-07,
     "cache_read_input_token_cost": 3e-07,
+    "deprecation_date": "2027-01-20",
     "input_cost_per_audio_token": 1e-05,
     "input_cost_per_token": 6e-07,
     "litellm_provider": "openai",
@@ -4098,6 +4153,7 @@
   "gpt-4o-mini-realtime-preview-2024-12-17": {
     "cache_creation_input_audio_token_cost": 3e-07,
     "cache_read_input_token_cost": 3e-07,
+    "deprecation_date": "2027-01-20",
     "input_cost_per_audio_token": 1e-05,
     "input_cost_per_token": 6e-07,
     "litellm_provider": "openai",
@@ -4142,6 +4198,7 @@
   },
   "gpt-4o-mini-search-preview-2025-03-11": {
     "cache_read_input_token_cost": 7.5e-08,
+    "deprecation_date": "2026-07-23",
     "input_cost_per_token": 1.5e-07,
     "input_cost_per_token_batches": 7.5e-08,
     "litellm_provider": "openai",
@@ -4173,6 +4230,7 @@
     ]
   },
   "gpt-4o-mini-transcribe-2025-03-20": {
+    "deprecation_date": "2027-01-20",
     "input_cost_per_audio_token": 1.25e-06,
     "input_cost_per_token": 1.25e-06,
     "litellm_provider": "openai",
@@ -4215,6 +4273,7 @@
     ]
   },
   "gpt-4o-mini-tts-2025-03-20": {
+    "deprecation_date": "2026-07-23",
     "input_cost_per_token": 2.5e-06,
     "litellm_provider": "openai",
     "mode": "audio_speech",
@@ -4252,6 +4311,7 @@
   },
   "gpt-4o-realtime-preview": {
     "cache_read_input_token_cost": 2.5e-06,
+    "deprecation_date": "2027-01-20",
     "input_cost_per_audio_token": 4e-05,
     "input_cost_per_token": 5e-06,
     "litellm_provider": "openai",
@@ -4270,6 +4330,7 @@
   },
   "gpt-4o-realtime-preview-2024-12-17": {
     "cache_read_input_token_cost": 2.5e-06,
+    "deprecation_date": "2027-01-20",
     "input_cost_per_audio_token": 4e-05,
     "input_cost_per_token": 5e-06,
     "litellm_provider": "openai",
@@ -4288,6 +4349,7 @@
   },
   "gpt-4o-realtime-preview-2025-06-03": {
     "cache_read_input_token_cost": 2.5e-06,
+    "deprecation_date": "2027-01-20",
     "input_cost_per_audio_token": 4e-05,
     "input_cost_per_token": 5e-06,
     "litellm_provider": "openai",
@@ -4332,6 +4394,7 @@
   },
   "gpt-4o-search-preview-2025-03-11": {
     "cache_read_input_token_cost": 1.25e-06,
+    "deprecation_date": "2026-07-23",
     "input_cost_per_token": 2.5e-06,
     "input_cost_per_token_batches": 1.25e-06,
     "litellm_provider": "openai",
@@ -4423,6 +4486,7 @@
     "cache_read_input_token_cost": 1.25e-07,
     "cache_read_input_token_cost_flex": 6.25e-08,
     "cache_read_input_token_cost_priority": 2.5e-07,
+    "deprecation_date": "2026-12-11",
     "input_cost_per_token": 1.25e-06,
     "input_cost_per_token_flex": 6.25e-07,
     "input_cost_per_token_priority": 2.5e-06,
@@ -4499,6 +4563,7 @@
   },
   "gpt-5-chat-latest": {
     "cache_read_input_token_cost": 1.25e-07,
+    "deprecation_date": "2026-07-23",
     "input_cost_per_token": 1.25e-06,
     "litellm_provider": "openai",
     "max_input_tokens": 128000,
@@ -4534,6 +4599,7 @@
   },
   "gpt-5-codex": {
     "cache_read_input_token_cost": 1.25e-07,
+    "deprecation_date": "2026-07-23",
     "input_cost_per_token": 1.25e-06,
     "litellm_provider": "openai",
     "max_input_tokens": 272000,
@@ -4615,6 +4681,7 @@
     "cache_read_input_token_cost": 2.5e-08,
     "cache_read_input_token_cost_flex": 1.25e-08,
     "cache_read_input_token_cost_priority": 4.5e-08,
+    "deprecation_date": "2026-12-11",
     "input_cost_per_token": 2.5e-07,
     "input_cost_per_token_flex": 1.25e-07,
     "input_cost_per_token_priority": 4.5e-07,
@@ -4699,6 +4766,7 @@
   "gpt-5-nano-2025-08-07": {
     "cache_read_input_token_cost": 5e-09,
     "cache_read_input_token_cost_flex": 2.5e-09,
+    "deprecation_date": "2026-12-11",
     "input_cost_per_token": 5e-08,
     "input_cost_per_token_flex": 2.5e-08,
     "input_cost_per_token_priority": 2.5e-06,
@@ -4775,6 +4843,7 @@
     "supports_xhigh_reasoning_effort": false
   },
   "gpt-5-pro-2025-10-06": {
+    "deprecation_date": "2026-12-11",
     "input_cost_per_token": 1.5e-05,
     "input_cost_per_token_batches": 7.5e-06,
     "litellm_provider": "openai",
@@ -4936,6 +5005,7 @@
   "gpt-5.1-chat-latest": {
     "cache_read_input_token_cost": 1.25e-07,
     "cache_read_input_token_cost_priority": 2.5e-07,
+    "deprecation_date": "2026-07-23",
     "input_cost_per_token": 1.25e-06,
     "input_cost_per_token_priority": 2.5e-06,
     "litellm_provider": "openai",
@@ -4975,6 +5045,7 @@
   "gpt-5.1-codex": {
     "cache_read_input_token_cost": 1.25e-07,
     "cache_read_input_token_cost_priority": 2.5e-07,
+    "deprecation_date": "2026-07-23",
     "input_cost_per_token": 1.25e-06,
     "input_cost_per_token_priority": 2.5e-06,
     "litellm_provider": "openai",
@@ -5011,6 +5082,7 @@
   },
   "gpt-5.1-codex-max": {
     "cache_read_input_token_cost": 1.25e-07,
+    "deprecation_date": "2026-07-23",
     "input_cost_per_token": 1.25e-06,
     "litellm_provider": "openai",
     "max_input_tokens": 272000,
@@ -5046,6 +5118,7 @@
   "gpt-5.1-codex-mini": {
     "cache_read_input_token_cost": 2.5e-08,
     "cache_read_input_token_cost_priority": 4.5e-08,
+    "deprecation_date": "2026-07-23",
     "input_cost_per_token": 2.5e-07,
     "input_cost_per_token_priority": 4.5e-07,
     "litellm_provider": "openai",
@@ -5165,6 +5238,7 @@
   "gpt-5.2-chat-latest": {
     "cache_read_input_token_cost": 1.75e-07,
     "cache_read_input_token_cost_priority": 3.5e-07,
+    "deprecation_date": "2026-08-10",
     "input_cost_per_token": 1.75e-06,
     "input_cost_per_token_priority": 3.5e-06,
     "litellm_provider": "openai",
@@ -5203,6 +5277,7 @@
   "gpt-5.2-codex": {
     "cache_read_input_token_cost": 1.75e-07,
     "cache_read_input_token_cost_priority": 3.5e-07,
+    "deprecation_date": "2026-07-23",
     "input_cost_per_token": 1.75e-06,
     "input_cost_per_token_priority": 3.5e-06,
     "litellm_provider": "openai",
@@ -5308,6 +5383,7 @@
   "gpt-5.3-chat-latest": {
     "cache_read_input_token_cost": 1.75e-07,
     "cache_read_input_token_cost_priority": 3.5e-07,
+    "deprecation_date": "2026-08-10",
     "input_cost_per_token": 1.75e-06,
     "input_cost_per_token_priority": 3.5e-06,
     "litellm_provider": "openai",
@@ -6212,6 +6288,7 @@
     "supports_xhigh_reasoning_effort": true
   },
   "gpt-audio": {
+    "deprecation_date": "2027-01-20",
     "input_cost_per_audio_token": 3.2e-05,
     "input_cost_per_token": 2.5e-06,
     "litellm_provider": "openai",
@@ -6281,6 +6358,7 @@
     "supports_vision": false
   },
   "gpt-audio-2025-08-28": {
+    "deprecation_date": "2027-01-20",
     "input_cost_per_audio_token": 3.2e-05,
     "input_cost_per_token": 2.5e-06,
     "litellm_provider": "openai",
@@ -6317,6 +6395,7 @@
     "supports_vision": false
   },
   "gpt-audio-mini": {
+    "deprecation_date": "2027-01-20",
     "input_cost_per_audio_token": 1e-05,
     "input_cost_per_token": 6e-07,
     "litellm_provider": "openai",
@@ -6353,6 +6432,7 @@
     "supports_vision": false
   },
   "gpt-audio-mini-2025-10-06": {
+    "deprecation_date": "2026-07-23",
     "input_cost_per_audio_token": 1e-05,
     "input_cost_per_token": 6e-07,
     "litellm_provider": "openai",
@@ -6427,6 +6507,7 @@
   "gpt-image-1": {
     "cache_read_input_image_token_cost": 2.5e-06,
     "cache_read_input_token_cost": 1.25e-06,
+    "deprecation_date": "2026-10-23",
     "input_cost_per_image_token": 1e-05,
     "input_cost_per_token": 5e-06,
     "litellm_provider": "openai",
@@ -6440,6 +6521,7 @@
   "gpt-image-1-mini": {
     "cache_read_input_image_token_cost": 2.5e-07,
     "cache_read_input_token_cost": 2e-07,
+    "deprecation_date": "2026-12-01",
     "input_cost_per_image_token": 2.5e-06,
     "input_cost_per_token": 2e-06,
     "litellm_provider": "openai",
@@ -6453,6 +6535,7 @@
   "gpt-image-1.5": {
     "cache_read_input_image_token_cost": 2e-06,
     "cache_read_input_token_cost": 1.25e-06,
+    "deprecation_date": "2026-12-01",
     "input_cost_per_image_token": 8e-06,
     "input_cost_per_token": 5e-06,
     "litellm_provider": "openai",
@@ -6468,6 +6551,7 @@
   "gpt-image-1.5-2025-12-16": {
     "cache_read_input_image_token_cost": 2e-06,
     "cache_read_input_token_cost": 1.25e-06,
+    "deprecation_date": "2026-12-01",
     "input_cost_per_image_token": 8e-06,
     "input_cost_per_token": 5e-06,
     "litellm_provider": "openai",
@@ -6512,9 +6596,28 @@
     "supports_pdf_input": true,
     "supports_vision": true
   },
+  "gpt-live-transcribe": {
+    "input_cost_per_second": 0.0002833333333333333,
+    "litellm_provider": "openai",
+    "mode": "audio_transcription",
+    "source": "https://platform.openai.com/docs/models/gpt-live-transcribe",
+    "supported_endpoints": [
+      "/v1/realtime",
+      "/v1/realtime/transcription_sessions"
+    ],
+    "supported_modalities": [
+      "text",
+      "audio"
+    ],
+    "supported_output_modalities": [
+      "text"
+    ],
+    "supports_audio_input": true
+  },
   "gpt-realtime": {
     "cache_creation_input_audio_token_cost": 4e-07,
     "cache_read_input_token_cost": 4e-07,
+    "deprecation_date": "2027-01-20",
     "input_cost_per_audio_token": 3.2e-05,
     "input_cost_per_image": 5e-06,
     "input_cost_per_token": 4e-06,
@@ -6681,6 +6784,7 @@
   "gpt-realtime-2025-08-28": {
     "cache_creation_input_audio_token_cost": 4e-07,
     "cache_read_input_token_cost": 4e-07,
+    "deprecation_date": "2027-01-20",
     "input_cost_per_audio_token": 3.2e-05,
     "input_cost_per_image": 5e-06,
     "input_cost_per_token": 4e-06,
@@ -6713,6 +6817,7 @@
   "gpt-realtime-mini": {
     "cache_creation_input_audio_token_cost": 3e-07,
     "cache_read_input_audio_token_cost": 3e-07,
+    "deprecation_date": "2027-01-20",
     "input_cost_per_audio_token": 1e-05,
     "input_cost_per_token": 6e-07,
     "litellm_provider": "openai",
@@ -6745,6 +6850,7 @@
     "cache_creation_input_audio_token_cost": 3e-07,
     "cache_read_input_audio_token_cost": 3e-07,
     "cache_read_input_token_cost": 6e-08,
+    "deprecation_date": "2026-07-23",
     "input_cost_per_audio_token": 1e-05,
     "input_cost_per_image": 8e-07,
     "input_cost_per_token": 6e-07,
@@ -6807,6 +6913,24 @@
     "supports_system_messages": true,
     "supports_tool_choice": true
   },
+  "gpt-realtime-translate": {
+    "input_cost_per_second": 0.0005666666666666667,
+    "litellm_provider": "openai",
+    "max_input_tokens": 16000,
+    "max_output_tokens": 2000,
+    "max_tokens": 2000,
+    "mode": "realtime",
+    "source": "https://platform.openai.com/docs/models/gpt-realtime-translate",
+    "supported_modalities": [
+      "audio"
+    ],
+    "supported_output_modalities": [
+      "text",
+      "audio"
+    ],
+    "supports_audio_input": true,
+    "supports_audio_output": true
+  },
   "gpt-realtime-whisper": {
     "input_cost_per_second": 0.0002833333333333333,
     "litellm_provider": "openai",
@@ -6817,6 +6941,24 @@
       "/v1/realtime/transcription_sessions"
     ],
     "supported_modalities": [
+      "audio"
+    ],
+    "supported_output_modalities": [
+      "text"
+    ],
+    "supports_audio_input": true
+  },
+  "gpt-transcribe": {
+    "input_cost_per_second": 7.5e-05,
+    "litellm_provider": "openai",
+    "mode": "audio_transcription",
+    "source": "https://platform.openai.com/docs/models/gpt-transcribe",
+    "supported_endpoints": [
+      "/v1/audio/transcriptions",
+      "/v1/realtime/transcription_sessions"
+    ],
+    "supported_modalities": [
+      "text",
       "audio"
     ],
     "supported_output_modalities": [
@@ -7421,6 +7563,7 @@
   },
   "o1-2024-12-17": {
     "cache_read_input_token_cost": 7.5e-06,
+    "deprecation_date": "2026-10-23",
     "input_cost_per_token": 1.5e-05,
     "litellm_provider": "openai",
     "max_input_tokens": 200000,
@@ -7439,6 +7582,7 @@
     "supports_vision": true
   },
   "o1-pro": {
+    "deprecation_date": "2026-10-23",
     "input_cost_per_token": 0.00015,
     "input_cost_per_token_batches": 7.5e-05,
     "litellm_provider": "openai",
@@ -7471,6 +7615,7 @@
     "supports_vision": true
   },
   "o1-pro-2025-03-19": {
+    "deprecation_date": "2026-10-23",
     "input_cost_per_token": 0.00015,
     "input_cost_per_token_batches": 7.5e-05,
     "litellm_provider": "openai",
@@ -7545,6 +7690,7 @@
     "cache_read_input_token_cost": 5e-07,
     "cache_read_input_token_cost_flex": 2.5e-07,
     "cache_read_input_token_cost_priority": 8.75e-07,
+    "deprecation_date": "2026-12-11",
     "input_cost_per_token": 2e-06,
     "input_cost_per_token_flex": 1e-06,
     "input_cost_per_token_priority": 3.5e-06,
@@ -7582,6 +7728,7 @@
   },
   "o3-deep-research": {
     "cache_read_input_token_cost": 2.5e-06,
+    "deprecation_date": "2026-07-23",
     "input_cost_per_token": 1e-05,
     "input_cost_per_token_batches": 5e-06,
     "litellm_provider": "openai",
@@ -7616,6 +7763,7 @@
   },
   "o3-deep-research-2025-06-26": {
     "cache_read_input_token_cost": 2.5e-06,
+    "deprecation_date": "2026-07-23",
     "input_cost_per_token": 1e-05,
     "input_cost_per_token_batches": 5e-06,
     "litellm_provider": "openai",
@@ -7650,6 +7798,7 @@
   },
   "o3-mini": {
     "cache_read_input_token_cost": 5.5e-07,
+    "deprecation_date": "2026-10-23",
     "input_cost_per_token": 1.1e-06,
     "litellm_provider": "openai",
     "max_input_tokens": 200000,
@@ -7667,6 +7816,7 @@
   },
   "o3-mini-2025-01-31": {
     "cache_read_input_token_cost": 5.5e-07,
+    "deprecation_date": "2026-10-23",
     "input_cost_per_token": 1.1e-06,
     "litellm_provider": "openai",
     "max_input_tokens": 200000,
@@ -7714,6 +7864,7 @@
     "supports_web_search": true
   },
   "o3-pro-2025-06-10": {
+    "deprecation_date": "2026-12-11",
     "input_cost_per_token": 2e-05,
     "input_cost_per_token_batches": 1e-05,
     "litellm_provider": "openai",
@@ -7748,6 +7899,7 @@
     "cache_read_input_token_cost": 2.75e-07,
     "cache_read_input_token_cost_flex": 1.375e-07,
     "cache_read_input_token_cost_priority": 5e-07,
+    "deprecation_date": "2026-10-23",
     "input_cost_per_token": 1.1e-06,
     "input_cost_per_token_flex": 5.5e-07,
     "input_cost_per_token_priority": 2e-06,
@@ -7774,6 +7926,7 @@
     "cache_read_input_token_cost": 2.75e-07,
     "cache_read_input_token_cost_flex": 1.375e-07,
     "cache_read_input_token_cost_priority": 5e-07,
+    "deprecation_date": "2026-10-23",
     "input_cost_per_token": 1.1e-06,
     "input_cost_per_token_flex": 5.5e-07,
     "input_cost_per_token_priority": 2e-06,
@@ -7798,6 +7951,7 @@
   },
   "o4-mini-deep-research": {
     "cache_read_input_token_cost": 5e-07,
+    "deprecation_date": "2026-07-23",
     "input_cost_per_token": 2e-06,
     "input_cost_per_token_batches": 1e-06,
     "litellm_provider": "openai",
@@ -7832,6 +7986,7 @@
   },
   "o4-mini-deep-research-2025-06-26": {
     "cache_read_input_token_cost": 5e-07,
+    "deprecation_date": "2026-07-23",
     "input_cost_per_token": 2e-06,
     "input_cost_per_token_batches": 1e-06,
     "litellm_provider": "openai",
