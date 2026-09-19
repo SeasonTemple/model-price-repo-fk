@@ -587,6 +587,7 @@
     "supports_prompt_caching": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
+    "supports_thinking_cache_preservation": true,
     "supports_tool_choice": true,
     "supports_vision": true
   },
@@ -617,6 +618,7 @@
     "supports_prompt_caching": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
+    "supports_thinking_cache_preservation": true,
     "supports_tool_choice": true,
     "supports_vision": true
   },
@@ -656,6 +658,7 @@
     "supports_reasoning": true,
     "supports_response_schema": true,
     "supports_speed": true,
+    "supports_thinking_cache_preservation": true,
     "supports_tool_choice": true,
     "supports_vision": true
   },
@@ -694,6 +697,7 @@
     "supports_reasoning": true,
     "supports_response_schema": true,
     "supports_speed": true,
+    "supports_thinking_cache_preservation": true,
     "supports_tool_choice": true,
     "supports_vision": true
   },
@@ -733,6 +737,7 @@
     "supports_reasoning": true,
     "supports_response_schema": true,
     "supports_speed": true,
+    "supports_thinking_cache_preservation": true,
     "supports_tool_choice": true,
     "supports_vision": true
   },
@@ -772,6 +777,7 @@
     "supports_response_schema": true,
     "supports_sampling_params": false,
     "supports_speed": true,
+    "supports_thinking_cache_preservation": true,
     "supports_tool_choice": true,
     "supports_vision": true,
     "supports_xhigh_reasoning_effort": true
@@ -811,6 +817,7 @@
     "supports_response_schema": true,
     "supports_sampling_params": false,
     "supports_speed": true,
+    "supports_thinking_cache_preservation": true,
     "supports_tool_choice": true,
     "supports_vision": true,
     "supports_xhigh_reasoning_effort": true
@@ -851,6 +858,7 @@
     "supports_response_schema": true,
     "supports_sampling_params": false,
     "supports_speed": true,
+    "supports_thinking_cache_preservation": true,
     "supports_tool_choice": true,
     "supports_vision": true,
     "supports_xhigh_reasoning_effort": true
@@ -893,6 +901,7 @@
     "supports_response_schema": true,
     "supports_sampling_params": false,
     "supports_speed": true,
+    "supports_thinking_cache_preservation": true,
     "supports_tool_choice": true,
     "supports_vision": true,
     "supports_xhigh_reasoning_effort": true
@@ -1065,6 +1074,7 @@
     "supports_prompt_caching": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
+    "supports_thinking_cache_preservation": true,
     "supports_tool_choice": true,
     "supports_vision": true
   },
@@ -1104,6 +1114,7 @@
     "supports_reasoning": true,
     "supports_response_schema": true,
     "supports_sampling_params": false,
+    "supports_thinking_cache_preservation": true,
     "supports_tool_choice": true,
     "supports_vision": true,
     "supports_xhigh_reasoning_effort": true
