@@ -1388,6 +1388,7 @@
   },
   "deepseek-chat": {
     "cache_read_input_token_cost": 2.8e-08,
+    "deprecation_date": "2026-07-24",
     "input_cost_per_token": 2.8e-07,
     "litellm_provider": "deepseek",
     "max_input_tokens": 131072,
@@ -1463,6 +1464,7 @@
   },
   "deepseek-reasoner": {
     "cache_read_input_token_cost": 2.8e-08,
+    "deprecation_date": "2026-07-24",
     "input_cost_per_token": 2.8e-07,
     "litellm_provider": "deepseek",
     "max_input_tokens": 131072,
