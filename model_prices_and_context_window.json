@@ -1,4 +1,56 @@
 {
+  "MiniMax-H3": {
+    "input_cost_per_image": 0.04,
+    "litellm_provider": "minimax",
+    "metadata": {
+      "comment": "V2 async task API. Pay-as-you-go list price $0.08/s at 768P and $0.13/s at 2K, plus $0.04 per input image beyond the first 5. Audio input is free. Reference video input is rejected, since MiniMax bills its duration only after the create call."
+    },
+    "mode": "video_generation",
+    "output_cost_per_second": 0.08,
+    "output_cost_per_second_2k": 0.13,
+    "output_cost_per_second_768p": 0.08,
+    "provider_specific_entry": {
+      "minimax_free_input_images": 5
+    },
+    "source": "https://platform.minimax.io/docs/guides/pricing-paygo",
+    "supported_endpoints": [
+      "/v1/videos"
+    ],
+    "supported_modalities": [
+      "text",
+      "image",
+      "audio"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
+  "MiniMax-H3-Max": {
+    "input_cost_per_image": 0.074,
+    "litellm_provider": "minimax",
+    "metadata": {
+      "comment": "V2 async task API, fast tier. Pay-as-you-go list price $0.05/s at 480P and $0.08/s at 768P; no 2K. Plus $0.074 per input image beyond the first 2. Audio input is free. Reference video input is rejected, since MiniMax bills its duration only after the create call."
+    },
+    "mode": "video_generation",
+    "output_cost_per_second": 0.08,
+    "output_cost_per_second_480p": 0.05,
+    "output_cost_per_second_768p": 0.08,
+    "provider_specific_entry": {
+      "minimax_free_input_images": 2
+    },
+    "source": "https://platform.minimax.io/docs/guides/pricing-paygo",
+    "supported_endpoints": [
+      "/v1/videos"
+    ],
+    "supported_modalities": [
+      "text",
+      "image",
+      "audio"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
   "MiniMax-M2": {
     "cache_creation_input_token_cost": 3.75e-07,
     "cache_read_input_token_cost": 3e-08,
@@ -10230,6 +10282,58 @@
     "supports_response_schema": true,
     "supports_system_messages": true,
     "supports_tool_choice": true
+  },
+  "minimax/MiniMax-H3": {
+    "input_cost_per_image": 0.04,
+    "litellm_provider": "minimax",
+    "metadata": {
+      "comment": "V2 async task API. Pay-as-you-go list price $0.08/s at 768P and $0.13/s at 2K, plus $0.04 per input image beyond the first 5. Audio input is free. Reference video input is rejected, since MiniMax bills its duration only after the create call."
+    },
+    "mode": "video_generation",
+    "output_cost_per_second": 0.08,
+    "output_cost_per_second_2k": 0.13,
+    "output_cost_per_second_768p": 0.08,
+    "provider_specific_entry": {
+      "minimax_free_input_images": 5
+    },
+    "source": "https://platform.minimax.io/docs/guides/pricing-paygo",
+    "supported_endpoints": [
+      "/v1/videos"
+    ],
+    "supported_modalities": [
+      "text",
+      "image",
+      "audio"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
+  "minimax/MiniMax-H3-Max": {
+    "input_cost_per_image": 0.074,
+    "litellm_provider": "minimax",
+    "metadata": {
+      "comment": "V2 async task API, fast tier. Pay-as-you-go list price $0.05/s at 480P and $0.08/s at 768P; no 2K. Plus $0.074 per input image beyond the first 2. Audio input is free. Reference video input is rejected, since MiniMax bills its duration only after the create call."
+    },
+    "mode": "video_generation",
+    "output_cost_per_second": 0.08,
+    "output_cost_per_second_480p": 0.05,
+    "output_cost_per_second_768p": 0.08,
+    "provider_specific_entry": {
+      "minimax_free_input_images": 2
+    },
+    "source": "https://platform.minimax.io/docs/guides/pricing-paygo",
+    "supported_endpoints": [
+      "/v1/videos"
+    ],
+    "supported_modalities": [
+      "text",
+      "image",
+      "audio"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
   },
   "minimax/MiniMax-M2": {
     "cache_creation_input_token_cost": 3.75e-07,
