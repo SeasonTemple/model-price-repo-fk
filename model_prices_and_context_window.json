@@ -1449,6 +1449,7 @@
     "supports_service_tier": true,
     "supports_system_messages": true,
     "supports_tool_choice": true,
+    "supports_tool_search": true,
     "supports_vision": true,
     "supports_web_search": true,
     "supports_xhigh_reasoning_effort": true
@@ -6971,6 +6972,7 @@
     "supports_service_tier": true,
     "supports_system_messages": true,
     "supports_tool_choice": true,
+    "supports_tool_search": true,
     "supports_vision": true,
     "supports_web_search": true,
     "supports_xhigh_reasoning_effort": true
@@ -7025,6 +7027,7 @@
     "supports_service_tier": true,
     "supports_system_messages": true,
     "supports_tool_choice": true,
+    "supports_tool_search": true,
     "supports_vision": true,
     "supports_web_search": true,
     "supports_xhigh_reasoning_effort": true
@@ -7287,6 +7290,7 @@
     "supports_response_schema": true,
     "supports_system_messages": false,
     "supports_tool_choice": true,
+    "supports_tool_search": true,
     "supports_vision": true,
     "supports_web_search": true,
     "supports_xhigh_reasoning_effort": false
@@ -7331,6 +7335,7 @@
     "supports_response_schema": true,
     "supports_system_messages": false,
     "supports_tool_choice": true,
+    "supports_tool_search": true,
     "supports_vision": true,
     "supports_web_search": true,
     "supports_xhigh_reasoning_effort": false
@@ -7390,6 +7395,7 @@
     "supports_service_tier": true,
     "supports_system_messages": true,
     "supports_tool_choice": true,
+    "supports_tool_search": true,
     "supports_vision": true,
     "supports_xhigh_reasoning_effort": true
   },
@@ -7448,6 +7454,7 @@
     "supports_service_tier": true,
     "supports_system_messages": true,
     "supports_tool_choice": true,
+    "supports_tool_search": true,
     "supports_vision": true,
     "supports_xhigh_reasoning_effort": true
   },
@@ -7502,6 +7509,7 @@
     "supports_service_tier": true,
     "supports_system_messages": true,
     "supports_tool_choice": true,
+    "supports_tool_search": true,
     "supports_vision": true,
     "supports_web_search": true,
     "supports_xhigh_reasoning_effort": true
@@ -7557,6 +7565,7 @@
     "supports_service_tier": true,
     "supports_system_messages": true,
     "supports_tool_choice": true,
+    "supports_tool_search": true,
     "supports_vision": true,
     "supports_web_search": true,
     "supports_xhigh_reasoning_effort": true
@@ -7717,6 +7726,7 @@
     "supports_service_tier": true,
     "supports_system_messages": true,
     "supports_tool_choice": true,
+    "supports_tool_search": true,
     "supports_vision": true,
     "supports_web_search": true,
     "supports_xhigh_reasoning_effort": true
@@ -7772,6 +7782,7 @@
     "supports_service_tier": true,
     "supports_system_messages": true,
     "supports_tool_choice": true,
+    "supports_tool_search": true,
     "supports_vision": true,
     "supports_web_search": true,
     "supports_xhigh_reasoning_effort": true
@@ -7835,6 +7846,7 @@
     "supports_service_tier": true,
     "supports_system_messages": true,
     "supports_tool_choice": true,
+    "supports_tool_search": true,
     "supports_vision": true,
     "supports_web_search": true,
     "supports_xhigh_reasoning_effort": true
@@ -7898,6 +7910,7 @@
     "supports_service_tier": true,
     "supports_system_messages": true,
     "supports_tool_choice": true,
+    "supports_tool_search": true,
     "supports_vision": true,
     "supports_web_search": true,
     "supports_xhigh_reasoning_effort": true
@@ -7961,6 +7974,7 @@
     "supports_service_tier": true,
     "supports_system_messages": true,
     "supports_tool_choice": true,
+    "supports_tool_search": true,
     "supports_vision": true,
     "supports_web_search": true,
     "supports_xhigh_reasoning_effort": true
@@ -8015,6 +8029,7 @@
     "supports_service_tier": true,
     "supports_system_messages": true,
     "supports_tool_choice": true,
+    "supports_tool_search": true,
     "supports_vision": true,
     "supports_web_search": true,
     "supports_xhigh_reasoning_effort": true
@@ -8088,6 +8103,7 @@
     "supports_response_schema": true,
     "supports_system_messages": true,
     "supports_tool_choice": true,
+    "supports_tool_search": true,
     "supports_vision": true,
     "supports_web_search": true,
     "supports_xhigh_reasoning_effort": true
@@ -8202,6 +8218,7 @@
     "supports_service_tier": true,
     "supports_system_messages": true,
     "supports_tool_choice": true,
+    "supports_tool_search": true,
     "supports_vision": true,
     "supports_web_search": true,
     "supports_xhigh_reasoning_effort": true
@@ -8278,6 +8295,7 @@
     "supports_service_tier": true,
     "supports_system_messages": true,
     "supports_tool_choice": true,
+    "supports_tool_search": true,
     "supports_vision": true,
     "supports_web_search": true,
     "supports_xhigh_reasoning_effort": true
@@ -8353,6 +8371,7 @@
     "supports_service_tier": true,
     "supports_system_messages": true,
     "supports_tool_choice": true,
+    "supports_tool_search": true,
     "supports_vision": true,
     "supports_web_search": true,
     "supports_xhigh_reasoning_effort": true
@@ -8437,6 +8456,7 @@
     "supports_response_schema": true,
     "supports_system_messages": true,
     "supports_tool_choice": true,
+    "supports_tool_search": true,
     "supports_vision": true,
     "supports_web_search": true,
     "supports_xhigh_reasoning_effort": true
@@ -8521,6 +8541,7 @@
     "supports_response_schema": true,
     "supports_system_messages": true,
     "supports_tool_choice": true,
+    "supports_tool_search": true,
     "supports_vision": true,
     "supports_web_search": true,
     "supports_xhigh_reasoning_effort": true
@@ -8597,6 +8618,7 @@
     "supports_response_schema": true,
     "supports_system_messages": true,
     "supports_tool_choice": true,
+    "supports_tool_search": true,
     "supports_vision": true,
     "supports_web_search": true,
     "supports_xhigh_reasoning_effort": true
@@ -8681,6 +8703,7 @@
     "supports_response_schema": true,
     "supports_system_messages": true,
     "supports_tool_choice": true,
+    "supports_tool_search": true,
     "supports_vision": true,
     "supports_web_search": true,
     "supports_xhigh_reasoning_effort": true
