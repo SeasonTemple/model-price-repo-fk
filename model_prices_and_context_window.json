@@ -5405,6 +5405,7 @@
     "supports_function_calling": true,
     "supports_prompt_caching": true,
     "supports_reasoning": true,
+    "supports_response_schema": true,
     "supports_tool_choice": true
   },
   "glm-5.3-flash": {
@@ -5417,6 +5418,22 @@
     "mode": "chat",
     "output_cost_per_token": 5e-07,
     "source": "https://docs.z.ai/guides/overview/pricing",
+    "supports_function_calling": true,
+    "supports_prompt_caching": true,
+    "supports_reasoning": true,
+    "supports_response_schema": true,
+    "supports_tool_choice": true,
+    "supports_vision": true
+  },
+  "glm-5v-turbo": {
+    "cache_read_input_token_cost": 2.4e-07,
+    "input_cost_per_token": 1.2e-06,
+    "litellm_provider": "zai",
+    "max_input_tokens": 200000,
+    "max_output_tokens": 128000,
+    "mode": "chat",
+    "output_cost_per_token": 4e-06,
+    "source": "https://vercel.com/ai-gateway/models/glm-5v-turbo",
     "supports_function_calling": true,
     "supports_prompt_caching": true,
     "supports_reasoning": true,
@@ -12024,6 +12041,43 @@
     "supports_vision": true,
     "supports_web_search": true
   },
+  "qwen-audio-3.0-tts-flash": {
+    "input_cost_per_character": 1.5e-05,
+    "litellm_provider": "dashscope",
+    "mode": "audio_speech",
+    "source": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+    "supported_endpoints": [
+      "/v1/audio/speech"
+    ]
+  },
+  "qwen-audio-3.0-tts-plus": {
+    "input_cost_per_character": 2e-05,
+    "litellm_provider": "dashscope",
+    "mode": "audio_speech",
+    "source": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+    "supported_endpoints": [
+      "/v1/audio/speech"
+    ]
+  },
+  "qwen-audio-3.1-tts-flash": {
+    "input_cost_per_token": 2.3e-07,
+    "litellm_provider": "dashscope",
+    "mode": "audio_speech",
+    "output_cost_per_token": 1.87e-06,
+    "source": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+    "supported_endpoints": [
+      "/v1/audio/speech"
+    ]
+  },
+  "qwen-audio-3.1-tts-plus": {
+    "input_cost_per_character": 3e-05,
+    "litellm_provider": "dashscope",
+    "mode": "audio_speech",
+    "source": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+    "supported_endpoints": [
+      "/v1/audio/speech"
+    ]
+  },
   "qwen-coder": {
     "input_cost_per_token": 3e-07,
     "litellm_provider": "dashscope",
@@ -12098,6 +12152,7 @@
   "qwen-image-2.0": {
     "litellm_provider": "dashscope",
     "mode": "image_generation",
+    "output_cost_per_image": 0.035,
     "source": "https://www.alibabacloud.com/help/en/model-studio/models",
     "supported_endpoints": [
       "/v1/images/generations"
@@ -12106,6 +12161,7 @@
   "qwen-image-2.0-pro": {
     "litellm_provider": "dashscope",
     "mode": "image_generation",
+    "output_cost_per_image": 0.075,
     "source": "https://www.alibabacloud.com/help/en/model-studio/models",
     "supported_endpoints": [
       "/v1/images/generations"
@@ -12114,6 +12170,7 @@
   "qwen-image-3.0": {
     "litellm_provider": "dashscope",
     "mode": "image_generation",
+    "output_cost_per_image": 0.03,
     "source": "https://www.alibabacloud.com/help/en/model-studio/models",
     "supported_endpoints": [
       "/v1/images/generations"
@@ -12676,6 +12733,15 @@
     "supports_function_calling": true,
     "supports_reasoning": true,
     "supports_tool_choice": true
+  },
+  "qwen3-tts-flash": {
+    "input_cost_per_character": 1e-05,
+    "litellm_provider": "dashscope",
+    "mode": "audio_speech",
+    "source": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+    "supported_endpoints": [
+      "/v1/audio/speech"
+    ]
   },
   "qwen3-vl-235b-a22b-instruct": {
     "input_cost_per_token": 4e-07,
