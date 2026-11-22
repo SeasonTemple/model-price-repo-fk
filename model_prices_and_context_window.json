@@ -11444,6 +11444,9 @@
     "litellm_provider": "openai",
     "mode": "realtime",
     "source": "https://developers.openai.com/api/docs/models/gpt-live-1",
+    "supported_endpoints": [
+      "/v1/live/sessions"
+    ],
     "supported_modalities": [
       "text",
       "audio"
@@ -11461,6 +11464,9 @@
     "litellm_provider": "openai",
     "mode": "realtime",
     "source": "https://developers.openai.com/api/docs/pricing",
+    "supported_endpoints": [
+      "/v1/live/sessions"
+    ],
     "supported_modalities": [
       "text",
       "audio"
@@ -11852,6 +11858,9 @@
     "max_tokens": 2000,
     "mode": "realtime",
     "source": "https://platform.openai.com/docs/models/gpt-realtime-translate",
+    "supported_endpoints": [
+      "/v1/realtime/translations"
+    ],
     "supported_modalities": [
       "audio"
     ],
